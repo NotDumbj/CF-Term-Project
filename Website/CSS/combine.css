@@ -60,9 +60,26 @@ footer{
     padding: 10px;
 }
 section{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    max-width: 90vh;
     max-width: 1700px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.btnlogout{
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(48, 64%, 86%);
+    padding: 20px;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.btnlogout:hover{
+    opacity: 0.838;
 }

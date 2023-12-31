@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coreo - An Online Shopping Mall</title>
+    <link rel="icon" type="image/x-icon" href="../Icons/favicon.ico">
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    <div class="container" id="formContainer">
+        <div class="form-box" id="loginForm">
+            <header>Login</header>
+            <form onsubmit="login(event)">
+                <div class="fieldinput">
+                    <label for="loginUsername">Username</label>
+                    <input type="text" name="loginUsername" id="loginUsername" required>
+                </div>
+                <div class="fieldinput">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" name="loginPassword" id="loginPassword" required>
+                </div>
+                <div class="fieldinput">
+                    <input type="submit" class="btn" name="submit" value="Login">
+                </div>
+                <div class="signup">
+                    Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box" id="signupForm">
+            <header>Sign Up</header>
+            <form onsubmit="signup(event)">
+                <div class="fieldinput">
+                    <label for="signupUsername">Username</label>
+                    <input type="text" name="signupUsername" id="signupUsername" required>
+                </div>
+                <div class="fieldinput">
+                    <label for="signupPassword">Password</label>
+                    <input type="password" name="signupPassword" id="signupPassword" required>
+                </div>
+                <div class="fieldinput">
+                    <input type="submit" class="btn" name="submit" value="Sign Up">
+                </div>
+                <div class="signup">
+                    Already a Member? <a href="#" onclick="showLogin()">Login Now</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="../JS/login.js"></script>
+</body>
+</html>
