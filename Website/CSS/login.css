@@ -11,7 +11,7 @@ body {
     display: block;
     flex-direction: column;
     align-items: center;
-    height: 80vh;
+    height: 40vh;
     overflow: hidden;
     transition: height 0.3s ease-in-out;
     margin-top: 1px;
@@ -22,7 +22,8 @@ body {
     width: 450px;
     margin: auto;
     background-color: #fdfdfd;
-    padding: 25px;
+    padding: 40px;
+    padding-right: 55px;
     border-radius: 10px;
     box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1), 0 32px 64px -48px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease-in-out;
@@ -85,15 +86,22 @@ input {
     cursor: pointer;
 }
 
-
 .container #loginForm {
-    transform: translateY(100%);
+    transform: translateY(25%);
 }
 
-.container.show-login .form-box {
-    transform: translateY(-300%);
+.container #signupForm {
+    transform: translateY(-80%);
 }
 
+.container.show-login #loginForm {
+    z-index: 2;
+}
+
+.container.show-signup #signupForm {
+
+    z-index: 2;
+}
 
 @media (max-width: 768px) {
     .container {
@@ -106,7 +114,7 @@ input {
     }
 
     .container.show-login .form-box {
-        transform: translateY(-300%);
+        transform: translateY(-250%);
     }
 }
 

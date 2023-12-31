@@ -95,7 +95,7 @@ section div p{
 
 li{
     font-size: 22px;
-    line-height: 45px;
+    line-height: 60px;
 }
 
 #features{
@@ -104,4 +104,8 @@ li{
     background-color: #EAEAEA;
     width: 420px;
     object-fit: cover;
+}
+
+ul{
+    margin-left: 20px;
 }

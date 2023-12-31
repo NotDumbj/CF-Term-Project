@@ -18,7 +18,7 @@ header{
     padding: 10px;
 }
 .header{
-    max-width: 1800px;
+    max-width: 1600px;
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -38,6 +38,7 @@ header{
 .add_to_cart{
     padding-right: 0px;
     margin-right: 0px;
+    display: inline;
 }
 ul{
     list-style: none;
@@ -83,6 +84,24 @@ header {
     background-color: #f8f8f8;
     padding: 20px;
     text-align: center;
+}
+
+header .add_to_cart {
+    
+}
+
+header .add_to_cart span{
+    width: 30px;
+    display: flex;
+    height: 30px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    top: 50%;
+    right: -20px;
+    position: relative;
 }
 
 nav {
@@ -164,11 +183,13 @@ footer {
 
 .title {
     color: #333;
+    margin-bottom: 20px;
 }
 
 .product {
     margin-bottom: 30px;
-    display: inline-block;
+    display: inline-block;  
+    filter: blur(8px);
 }
 
 .product img {
@@ -329,4 +350,14 @@ footer {
 
 .contact .pic{
     padding-bottom: 55px;
+}
+
+.product-section{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.title{
+
 }
