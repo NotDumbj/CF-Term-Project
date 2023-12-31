@@ -1,76 +1,68 @@
-/* Reset some default styles for better consistency */
-body, h1, h2, h3, p, ul, li {
+*{
     margin: 0;
     padding: 0;
 }
-
-/* Basic styling for the body */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
 }
+.logo{
+    width: 75px;
+    height: 75px;
+    vertical-align: middle;
+}
+header{
+    display: flexbox;
+    background-color:whitesmoke;
+    width: 100%;
+    padding: 10px;
+}
+.header{
+    max-width: 1800px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 
-/* Header styling */
-header {
-    background-color: #333;
-    color: #fff;
+    vertical-align: middle;
+}
+.webpagelink{
+    justify-content: center;
     text-align: center;
-    padding: 1em 0;
 }
-
-nav ul {
+.webpagelink a{
+    margin: 0 15px;
+}
+.add_to_cart{
+    padding-right: 0px;
+    margin-right: 0px;
+}
+ul{
     list-style: none;
 }
-
-nav ul li {
+li{
     display: inline;
-    margin-right: 20px;
+    margin: 50px;
 }
-
-nav a {
+a{
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+    color: black;
+
+}
+.login{
+    border: solid 1px black;
 }
 
-/* Main content styling */
-section {
-    max-width: 1200px;
+footer{
+    text-align: center;
+    padding: 10px;
+}
+section{
+    max-width: 1700px;
     margin: 20px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #333;
-}
-
-/* Footer styling */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-}
-
-/* Responsive styling */
-@media (max-width: 600px) {
-    section {
-        padding: 10px;
-    }
-
-    header {
-        padding: 0.5em 0;
-    }
-
-    nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin-bottom: 10px;
-    }
 }

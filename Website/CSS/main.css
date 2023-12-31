@@ -1,68 +1,107 @@
-*{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand','Arial';
 }
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    
+
+body {
+    font-family: 'Quicksand','Arial';
+    background-color: #f9f9f9;
+    min-height: 100vh;
 }
-.logo{
-    width: 75px;
-    height: 75px;
-    vertical-align: middle;
+
+.header {
+    text-align: center;
+    padding: 35px;
+    background-color: #F1EFE7;
 }
-header{
-    display: flexbox;
-    background-color:whitesmoke;
-    width: 100%;
-    padding: 10px;
+
+.logo {
+    width: 890px;
+    height: auto;
 }
-.header{
+
+.main-section-video{
     max-width: 1800px;
-    margin: 0 auto;
-    width: 100%;
+    display: block;
+    padding: 20px;
+    justify-items: center;
+    text-align: center;
+}
+
+.main-section {
+    flex: 1;
+    max-width: 1900px;
+    margin: 20px auto 20px auto;
+    padding: 25px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-
-    vertical-align: middle;
-}
-.webpagelink{
-    justify-content: center;
-    text-align: center;
-}
-.webpagelink a{
-    margin: 0 15px;
-}
-.add_to_cart{
-    padding-right: 0px;
-    margin-right: 0px;
-}
-ul{
-    list-style: none;
-}
-li{
-    display: inline;
-    margin: 50px;
-}
-a{
-    text-decoration: none;
-    color: black;
-
-}
-.login{
-    border: solid 1px black;
-}
-
-footer{
-    text-align: center;
-    padding: 10px;
-}
-section{
-    max-width: 1700px;
-    margin: 20px auto;
-    padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sectionpic img {
+    max-height: 600px;
+    width: auto;
+}
+
+.intro {
+    vertical-align: top;
+    flex: 1;
+    padding: 20px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.login-btn {
+    display: inline-block;
+    text-decoration: none;
+    border: none;
+    margin-left: 90px;
+    padding: 15px 40px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    background-color: #ed4848;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+    background-color: #c63737;
+}
+
+.footer {
+    justify-content: end;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    display: block;
+}
+
+section div p{
+    line-height: 23px;
+    margin-bottom: 50px;
+    width: 1020px
+}
+
+li{
+    font-size: 22px;
+    line-height: 45px;
+}
+
+#features{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #EAEAEA;
+    width: 420px;
+    object-fit: cover;
 }
