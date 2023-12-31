@@ -124,9 +124,9 @@ section {
 }
 
 .add-to-cart-btn{
-    background-color: #4caf50;
-    color: white;
-    padding: 12px;
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -161,6 +161,172 @@ footer {
 .product-description{
     margin-bottom: 15px;
 }
-.add-to-cart-btn{
 
+.title {
+    color: #333;
+}
+
+.product {
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.product p {
+    color: #666;
+}
+
+.product span {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+#about {
+    background-color: #f8f8f8;
+    padding: 20px;
+    width: 800px
+ 
+}
+
+#about h2 {
+    color: #333;
+    margin-bottom: 31px;
+}
+
+.about-text {
+    text-align: left;
+    color: #555;
+    line-height: 1.0;
+    margin-bottom: 20px;
+}
+
+.about-two{
+    display: grid;
+    grid-template-columns: 850px 1fr;
+}
+
+#jib{
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: rgb(38, 11, 11);
+}
+#raf{
+    margin-bottom: 0;
+    margin-top: 40px;
+    margin-left: 40px;
+    padding-bottom: 10px;
+    color: rgb(38, 11, 11);
+}
+
+.ourpic{
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+
+}
+
+.pic{
+    
+    background-color: #f4f4f4;
+    height: 492px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.pic div label{
+    font-size: 20px;
+    font-family:monospace;
+    display: inline;
+}
+.pic h2{
+    margin-top: 20px;
+}
+.jibraf{
+    background-color: rgb(235, 248, 159);
+    width: 250px;
+    padding: 9px;
+    padding-bottom: 11px;
+    margin-left: 300px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.bahria{
+    width: 450px;
+    margin-top: 45px;
+    border: 3px solid black;
+    margin-bottom: 9px;
+}
+
+#contact {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #333;
+}
+
+.contact-text {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact textarea {
+    max-height: 150px;
+    resize: vertical;
+}
+
+.contact button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact button:hover {
+    background-color: #45a049;
+}
+
+.contact .pic{
+    padding-bottom: 55px;
 }

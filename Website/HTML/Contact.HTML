@@ -19,10 +19,6 @@
                     <li><a href="Product.HTML">Products</a></li>
                     <li><a href="About.Html">About</a></li>    
                     <li><a href="Contact.HTML">Contact</a></li>
-                    <li><a href="changeprofile.html">Change Profile</a></li>
-                    <li>
-                        <a href="logout.php"><button class="btnlogout">Log Out</button></a>
-                    </li>
                 </ul>
                 
             </div>
@@ -33,13 +29,40 @@
         </div>
         
     </header>
-    <section>
-        <div>
-
+    <section class="contact">
+        <div class="about-two">
+            <div>
+                <div id="about">
+                    <h2>We study at Bahria University</h2>
+                    <p class="about-text">Have questions or feedback? Reach out to us!</p>
+                </div>
+                <div id="about">
+                    <h2>Contact Us</h2>
+                    <form action="" method="get">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" required>
+            
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="email" required>
+            
+                        <label for="message">Your Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+            
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+            <div class="pic">
+                <img class="bahria" src="../Pictures/bahria.jpeg">
+                <h3>A View of Bahria University</h3>
+            </div>
         </div>
+        
     </section>
     <footer>
         <p>&copy; 2023 Coreo - All rights reserved.</p>
     </footer>
 </body>
 </html>
+        
+        
