@@ -71,15 +71,96 @@ section{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.btnlogout{
-    border: none;
-    border-radius: 5px;
-    background-color: hsl(48, 64%, 86%);
-    padding: 20px;
-    cursor: pointer;
-    transition: all .3s;
+/* Add your styles here */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.btnlogout:hover{
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+}
+
+.flavor-card {
+    display: inline-block;
+    border: 2px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+
+.flavor-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.add-to-cart-btn{
+    background-color: #4caf50;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all.3s;
+}
+.add-to-cart-btn:hover{
     opacity: 0.838;
+}
+footer {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+#flavors{
+    display: grid;
+}
+#flavors .rows{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#flavors h2{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.product-title{
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+.product-description{
+    margin-bottom: 15px;
+}
+.add-to-cart-btn{
+
 }
