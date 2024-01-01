@@ -36,11 +36,11 @@ let registeredUsers = [];
         }
 
         function showSignup() {
-            document.getElementById('formContainer').classList.add('show-login');
-
+            document.getElementById('formContainer').classList.add('show-signup');
+            document.getElementById('formContainer').classList.remove('show-login');
         }
 
         function showLogin() {
-            document.getElementById('formContainer').classList.remove('show-login');
- 
+            document.getElementById('formContainer').classList.remove('show-signup');
+            document.getElementById('formContainer').classList.add('show-login');
         }

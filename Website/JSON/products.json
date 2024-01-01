@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Oreo",
+        "price": 0.050,
+        "image": "../Pictures/oreo.jpeg"
+    },
+    {
+        "id": 2,
+        "name": "Oreo Cakester",
+        "price": 0.060,
+        "image": "../Pictures/oreocakester.jpeg"
+    },
+    {
+        "id": 3,
+        "name": "Oreo Cones",
+        "price": 0.040,
+        "image": "../Pictures/oreocones.jpeg"
+    },
+    {
+        "id": 4,
+        "name": "Oreo Family Pack",
+        "price": 0.090,
+        "image": "../Pictures/oreofamilysize.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Oreo Java Chip",
+        "price": 0.100,
+        "image": "../Pictures/oreojavachip.jpeg"
+    },
+    {
+        "id": 6,
+        "name": "Oreo Mocha Caramel Latte",
+        "price": 0.060,
+        "image": "../Pictures/oreomochacaramellatte.jpeg"
+    },
+    {
+        "id": 7,
+        "name": "Cocomo",
+        "price": 0.036,
+        "image": "../Pictures/cocomo.jpeg"
+    },
+    {
+        "id": 8,
+        "name": "Cocomo Milk",
+        "price": 0.040,
+        "image": "../Pictures/cocomomilk.jpeg"
+    },
+    {
+        "id": 9,
+        "name": "Cocomo Strawberry",
+        "price": 0.025,
+        "image": "../Pictures/cocomostrawberry.jpeg"
+    },
+    {
+        "id": 10,
+        "name": "Cocomo Orange",
+        "price": 0.056,
+        "image":"../Pictures/cocomoorange.jpeg"
+    },
+    {
+        "id": 11,
+        "name": "Oreo Mini",
+        "price": 0.066,
+        "image": "../Pictures/oreomini.jpeg"
+    },
+    {
+        "id": 12,
+        "name": "Oreo Mini Chocolate",
+        "price": 0.066,
+        "image": "../Pictures/oreominichoco.jpeg"
+    }
+]
