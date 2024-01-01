@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Display a modal or alert with the total price, address, and payment method
         const paymentMethod = 'Cash on Delivery'; // You can change this if you have other payment methods
         alert(`Total Price: $${totalPrice.toFixed(2)}\nAddress: ${address}\nPayment Method: ${paymentMethod}`);
-        alert(`Your Order will reach u in 3 days`)
+        alert(`Your Order will reach you in 3 days`)
         alert(`Thank U For Shopping From COREO.`);
     });
 
