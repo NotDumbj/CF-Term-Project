@@ -11,9 +11,11 @@ body{
     
 }
 .logo{
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
     vertical-align: middle;
+    margin-right: 0px;
 }
 header{
     display: flexbox;
@@ -23,7 +25,7 @@ header{
     margin-bottom: 80px;
 }
 .header{
-    max-width: 1600px;
+    max-width: 1500px;
     margin: 0 auto;
     width: 100%;
     display: flex;
@@ -49,6 +51,7 @@ header{
     color: #FFA500;
 }
 ul{
+    margin-left: 0px;
     list-style: none;
 }
 li{
