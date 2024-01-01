@@ -386,6 +386,7 @@ footer {
     font-size: 69px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
+    color: #376f25;
 }
 
 #oreo-section .product{
@@ -441,7 +442,7 @@ footer {
 
 #cocomo-section h2{
     margin-bottom: 25px;
-    color: #333333;
+    color: #751010;
     font-size: 69px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
@@ -483,7 +484,7 @@ footer {
     color: #3498db;
 }
 
-#oreo-coccmo-section{
+#oreo-cocomo-section{
     background: linear-gradient(rgb(237, 246, 213), lightpink);
     border-radius: 12px;
 }
@@ -511,6 +512,7 @@ footer {
     font-size: 69px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
+    color: rgb(226, 50, 97);
 }
 
 #oreo-cocomo-section .product{
