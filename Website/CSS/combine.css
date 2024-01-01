@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -42,7 +43,7 @@ header{
     padding-right: 0px;
     margin-right: 0px;
     display: inline;
-    cursor: pointer;
+    cursor: url(../Cursor/wha.cur) , auto;
     color: #FFA500;
 }
 ul{
@@ -153,7 +154,7 @@ section {
     padding: 8px 15px;
     border: none;
     border-radius: 5px;
-    cursor: url(../Cursor/oreoupd.cur), auto;
+    cursor: url(../Cursor/wha.cur), auto;
     transition: all.3s;
 }
 .add-to-cart-btn:hover{
@@ -344,7 +345,7 @@ footer {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    cursor: pointer;
+    cursor: url(../Cursor/wha.cur) , auto;
     transition: background-color 0.3s;
 }
 
@@ -422,7 +423,8 @@ footer {
 }
 
 #cocomo-section{
-    background-color: ;
+    background-color: lightpink;
+    border-radius: 12px;
 }
 
 #cocomo-section:hover{
@@ -481,6 +483,10 @@ footer {
     color: #3498db;
 }
 
+#oreo-coccmo-section{
+    background: linear-gradient(rgb(237, 246, 213), lightpink);
+    border-radius: 12px;
+}
 
 #oreo-cocomo-section:hover{
     cursor: url(../Cursor/oreococomo.cur) , auto;
@@ -578,7 +584,7 @@ footer {
     border: none;
     font-family: 'Poppins';
     font-weight: 500;
-    cursor: pointer;
+    cursor: url(../Cursor/wha.cur) , auto;
     margin-right: 10px;
     transition: all .3s;
 }
@@ -638,7 +644,7 @@ footer {
     width: 100px;
     height: 15px;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: url(../Cursor/wha.cur) , auto;
     margin: 0 10px;
     padding-left: 5px;
     padding-right: 5px;
@@ -652,14 +658,14 @@ footer {
     background-color: #fff;
     color: #333;
     border-radius: 25px;
-    cursor: pointer;
+    cursor: url(../Cursor/wha.cur) , auto;
 }
 
 .cart-tab .listCart .quantity span:nth-child(2) {
     background-color: transparent;
     color: #eee;
     border-radius: 50%;
-    cursor: pointer;
+    cursor: url(../Cursor/wha.cur) , auto;
 }
 
 .cart-tab .listCart::-webkit-scrollbar {
