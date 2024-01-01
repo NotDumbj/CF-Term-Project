@@ -3,84 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coreo - A Online Shopping Mall</title>
+    <title>Coreo - An Online Shopping Mall</title>
     <link rel="stylesheet" href="../CSS/combine.css">
     <link rel="icon" type="image/x-icon" href="../Icons/Coreo.png">
-</head>
-<body>
-    <header>
-        <div class="header">
-            <div>
-                <img class="logo" src="../Icons/Coreo.png">
+<body class="showclass">
+    <div class="container">
+        <header>
+            <div class="header">
+                <div>
+                    <a href="home.html">
+                        <img class="logo" src="../Icons/Coreo.png" alt="Coreo Logo">
+                    </a>
+                </div>
+                <div class="webpagelinks">
+                    <ul>
+                        <li><a href="home.html">Home</a></li>
+                        <li><a href="Product.HTML">Products</a></li>
+                        <li><a href="About.Html">About</a></li>    
+                        <li><a href="Contact.HTML">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="add_to_cart">
+                    <img class="cart" src="../Icons/cart2.png" alt="Shopping Cart Icon"> 
+                    <span>0</span>               
+                </div>
             </div>
-            <div class="webpagelinks">
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="Product.HTML">Products</a></li>
-                    <li><a href="About.Html">About</a></li>    
-                    <li><a href="Contact.HTML">Contact</a></li>
-                </ul>
-                
-            </div>
-            <div class="add_to_cart">
-                <img class="cart" src="../Icons/cart2.png"> 
-                <span>0</span>               
-        </div>
-            
-        </div>
+        </header>
+        <section id="oreo-section">
+            <h2>Introducing New Oreo</h2>
+            <h3 style="font-size: 35px; font-family: monospace;"> Andriod X Oreo </h3>
+            <video width="1700" height="1040" controls>
+                <source src="../Video/oreo(1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+        </section>
+             
         
-    </header>
-    <section id="flavors">
-        <h2>Explore Our Flavors</h2>
-        <h2 class="flv-title">Cocomo Flavors</h2>
-        <div class="rows">
+        <section id="flavors">
+            <h2>Explore Our Flavors</h2>
+            <h2 class="title"  id="cocomo">Cocomo Flavors</h2>
+            <div class="rows">
+                
+                <div class="product">
+                    <img src="../Pictures/cocomo.jpeg" alt="Cocomo Chocolate Flavor">
+                    <h3 class="product-title">Cocomo Chocolate</h3>
+                    <p class="product-description">Indulge in the rich and creamy taste of chocolate in every bite.</p>
+                    <a href="Product.HTML#cocomo-section">
+                        <button class="go-to-product">Go to Products</button>
+                    </a>
             
-            <div class="flavor-card">
-                <img src="../Pictures/cocomo.jpeg" alt="Cocomo Chocolate Flavor">
-                <h3 class="product-title">Cocomo Chocolate</h3>
-                <p class="product-description">Indulge in the rich and creamy taste of chocolate in every bite.</p>
-                <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+        
+                <div class="product">
+                    <img src="../Pictures/cocomostrawberry.jpeg" alt="Cocomo Strawberry Flavor">
+                    <h3 class="product-title">Cocomo Strawberry</h3>
+                    <p class="product-description">Experience the sweet and fruity delight of strawberry-infused Cocomo.</p>
+                    <a href="Product.HTML#cocomo-section">
+                        <button class="go-to-product">Go to Products</button>
+                    </a>
+                </div>
+        
+                <div class="product">
+                    <img src="../Pictures/cocomoorange.jpeg" alt="Cocomo Orange Flavor">
+                    <h3 class="product-title">Cocomo Orange</h3>
+                    <p class="product-description">Cocomo that is special due to its orange fusion</p>
+                    <a href="Product.HTML#cocomo-section">
+                        <button class="go-to-product">Go to Products</button>
+                    </a>
+                </div>
             </div>
-    
-            <div class="flavor-card">
-                <img src="../Pictures/cocomostrawberry.jpeg" alt="Cocomo Strawberry Flavor">
-                <h3 class="product-title">Cocomo Strawberry</h3>
-                <p class="product-description">Experience the sweet and fruity delight of strawberry-infused Cocomo.</p>
-                <button class="add-to-cart-btn">Add to Cart</button>
+            <h2 class="title" id="oreohometitle">Oreo Flavors</h2>
+            <div class="rows" id="oreohome">
+                
+                <div class="product" >
+                    <img src="../Pictures/oreocakester.jpeg" alt="Oreo Cakester Flavor">
+                    <h3 class="product-title">Oreo Cakester</h3>
+                    <p class="product-description">A Classical Snack when Orea collab with Cake.</p>
+                    <a href="Product.HTML#oreo-section">
+                        <button class="go-to-product">Go to Products</button>
+                    </a>
+                </div>
+        
+                <div class="product">
+                    <img src="../Pictures/oreocones.jpeg" alt="Oreo Cones">
+                    <h3 class="product-title">Oreo Cone</h3>
+                    <p class="product-description">We have to lick it I guess ?</p>
+                    <a href="Product.HTML#oreo-section">
+                        <button class="go-to-product">Go to Products</button>
+                    </a>
+                </div>
+        
+                <div class="product">
+                    <img src="../Pictures/oreofamilysize.jpeg" alt="Oreo Family Size">
+                    <h3 class="product-title">Oreo Family Size</h3>
+                    <p class="product-description">Oreo For Your Whole Family.</p>
+                    <a href="Product.HTML#oreo-section">
+                        <button class="go-to-product">Go to Products</button>
+                    </a>
+                </div>
             </div>
-    
-            <div class="flavor-card">
-                <img src="../Pictures/cocomoorange.jpeg" alt="Oreo Vanilla Flavor">
-                <h3 class="product-title">Cocomo Orange</h3>
-                <p class="product-description">Cocomo that is special due to its orange fusion</p>
-                <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-        </div>
-        <h2 class="flv-title">Oreo Flavors</h2>
-        <div class="rows">
-            
-            <div class="flavor-card">
-                <img src="../Pictures/oreocakester.jpeg" alt="Cocomo Chocolate Flavor">
-                <h3 class="product-title">Cocomo Chocolate</h3>
-                <p class="product-description">Indulge in the rich and creamy taste of chocolate in every bite.</p>
-                <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-    
-            <div class="flavor-card">
-                <img src="../Pictures/oreocones.jpeg" alt="Cocomo Strawberry Flavor">
-                <h3 class="product-title">Cocomo Strawberry</h3>
-                <p class="product-description">Experience the sweet and fruity delight of strawberry-infused Cocomo.</p>
-                <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-    
-            <div class="flavor-card">
-                <img src="../Pictures/oreofamilysize.jpeg" alt="Oreo Vanilla Flavor">
-                <h3 class="product-title">Oreo Vanilla</h3>
-                <p class="product-description">Classic Oreo cookies with a twist of smooth and creamy vanilla filling.</p>
-                <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-        </div>
-    </section>
+        </section>
     <footer>
         <p>&copy; 2024 Coreo - All rights reserved.</p>
     </footer>

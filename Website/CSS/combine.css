@@ -11,15 +11,16 @@ body{
     
 }
 .logo{
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     vertical-align: middle;
 }
 header{
     display: flexbox;
     background-color:whitesmoke;
     width: 100%;
-    padding: 10px;
+    padding: 30px;
+    margin-bottom: 80px;
 }
 .header{
     max-width: 1600px;
@@ -39,11 +40,12 @@ header{
 .webpagelink a{
     margin: 0 15px;
 }
+
 .add_to_cart{
     padding-right: 0px;
     margin-right: 0px;
     display: inline;
-    cursor: url(../Cursor/wha.cur) , auto;
+    cursor: url(../Cursor/wah.cur) , auto;
     color: #FFA500;
 }
 ul{
@@ -56,7 +58,10 @@ li{
 a{
     text-decoration: none;
     color: black;
-
+    font-size: 22px;
+}
+a:hover{
+    cursor: url(../Cursor/wah.cur), auto;
 }
 .login{
     border: solid 1px black;
@@ -148,16 +153,18 @@ section {
     height: auto;
 }
 
-.add-to-cart-btn{
+.add-to-cart-btn,
+.go-to-product{
     background-color: #333;
     color: #fff;
     padding: 8px 15px;
     border: none;
     border-radius: 5px;
-    cursor: url(../Cursor/wha.cur), auto;
+    cursor: url(../Cursor/wah.cur), auto;
     transition: all.3s;
 }
-.add-to-cart-btn:hover{
+.add-to-cart-btn:hover,
+.go-to-product:hover{
     opacity: 0.838;
 }
 footer {
@@ -170,7 +177,7 @@ footer {
     display: grid;
 }
 #flavors .rows{
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
@@ -345,7 +352,7 @@ footer {
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
-    cursor: url(../Cursor/wha.cur) , auto;
+    cursor: url(../Cursor/wah.cur) , auto;
     transition: background-color 0.3s;
 }
 
@@ -366,6 +373,8 @@ footer {
 #oreo-section{
     background-color: rgb(237, 246, 213);
     border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 #oreo-section:hover{
@@ -382,7 +391,8 @@ footer {
 
 
 #oreo-section h2{
-    margin-bottom: 25px;
+    margin-bottom: 55px;
+    margin-top: 10px;
     font-size: 69px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
@@ -402,8 +412,9 @@ footer {
 }
 
 #oreo-section .product:hover{
-    box-shadow: 0 15px 10px rgba(207, 57, 224, 0.5);
-    background: linear-gradient(rgb(203, 237, 146),rgb(62, 62, 238),white);
+    box-shadow: 0 15px 10px rgb(127, 93, 30);
+    transform: scale(1.02);
+    background: linear-gradient(rgb(216, 245, 49) ,rgb(229, 246, 42),white);
 }
 
 #oreo-section .product img{
@@ -426,6 +437,8 @@ footer {
 #cocomo-section{
     background-color: lightpink;
     border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 #cocomo-section:hover{
@@ -441,7 +454,8 @@ footer {
 }
 
 #cocomo-section h2{
-    margin-bottom: 25px;
+    margin-bottom: 55px;
+    margin-top: 10px;
     color: #751010;
     font-size: 69px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -449,20 +463,22 @@ footer {
 }
 
 #cocomo-section .product{
-    background-color: #f4f4f4;
+    background-color: #fff2c6;
     width: 390px;
     height: 400px;
     padding-top: 30px;
     border-radius: 20px;
     vertical-align: top;
-    margin-left: 225px;
+    margin-left: 250px;
     margin-right: 0px;
     border: 1px solid #ccc;
+    transition: all .3s;
 }
 
 #cocomo-section .product:hover{
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-    background: linear-gradient(rgb(19, 19, 69) ,rgb(165, 115, 240),white);
+    box-shadow: 0 15px 10px rgb(127, 30, 117);
+    transform: scale(1.02);
+    background: linear-gradient(rgb(229, 31, 236) ,rgb(249, 159, 34),white);
 }
 
 #cocomo-section .product img{
@@ -485,8 +501,10 @@ footer {
 }
 
 #oreo-cocomo-section{
-    background: linear-gradient(rgb(237, 246, 213), lightpink);
+    background: linear-gradient(rgb(163, 248, 248), rgb(199, 182, 255));
     border-radius: 12px;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }
 
 #oreo-cocomo-section:hover{
@@ -508,11 +526,12 @@ footer {
 }
 
 #oreo-cocomo-section h2{
-    margin-bottom: 25px;
+    margin-bottom: 50px;
+    margin-top: 10px;
     font-size: 69px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bolder;
-    color: rgb(226, 50, 97);
+    color: rgb(19, 135, 174);
 }
 
 #oreo-cocomo-section .product{
@@ -525,11 +544,13 @@ footer {
     margin-left: 225px;
     margin-right: 0px;
     border: 1px solid #ccc;
+    transition: all .3s;
 }
 
 #oreo-cocomo-section .product:hover{
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-    background: linear-gradient(rgb(203, 237, 146),rgb(62, 62, 238),white);
+    box-shadow: 0 0 10px rgba(0, 255, 183, 0.8), 0 0 20px rgba(0, 204, 255, 0.8), 0 0 30px rgba(0, 153, 255, 0.8);
+    transform: scale(1.02);
+    background: linear-gradient(rgb(5, 134, 255) ,rgb(5, 246, 246),white);
 }
 
 #oreo-cocomo-section .product img{
@@ -586,7 +607,7 @@ footer {
     border: none;
     font-family: 'Poppins';
     font-weight: 500;
-    cursor: url(../Cursor/wha.cur) , auto;
+    cursor: url(../Cursor/wah.cur) , auto;
     margin-right: 10px;
     transition: all .3s;
 }
@@ -646,7 +667,7 @@ footer {
     width: 100px;
     height: 15px;
     border-radius: 50%;
-    cursor: url(../Cursor/wha.cur) , auto;
+    cursor: url(../Cursor/wah.cur) , auto;
     margin: 0 10px;
     padding-left: 5px;
     padding-right: 5px;
@@ -660,14 +681,14 @@ footer {
     background-color: #fff;
     color: #333;
     border-radius: 25px;
-    cursor: url(../Cursor/wha.cur) , auto;
+    cursor: url(../Cursor/wah.cur) , auto;
 }
 
 .cart-tab .listCart .quantity span:nth-child(2) {
     background-color: transparent;
     color: #eee;
     border-radius: 50%;
-    cursor: url(../Cursor/wha.cur) , auto;
+    cursor: url(../Cursor/wah.cur) , auto;
 }
 
 .cart-tab .listCart::-webkit-scrollbar {
@@ -698,3 +719,55 @@ body.showcart .cart-tab{
 
 }
 
+
+
+#flavors{
+    background-color: #fff1d0;
+    border-radius: 13px;
+}
+
+#flavors img{
+    width: 250px;
+    height: 250px
+}
+
+#flavors .product{
+    background-color: #fff6dc;
+    width: 390px;
+    height: 400px;
+    padding-top: 30px;
+    border-radius: 20px;
+    vertical-align: top;
+    margin: 20px;
+    border: 1px solid #ccc;
+    transition: all .3s;
+}
+#flavors .product:hover{
+    transform: scale(1.02);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+    background-color: #fdf2cf;
+}
+#flavors .title{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#flavors h2{
+    margin-top: 30px;
+    color:rgb(48, 169, 163);
+}
+#flavors .title{
+    color: #c35454;
+}
+
+#flavors #oreohometitle{
+    color: rgb(37, 37, 173);
+}
+
+#flavors #oreohome .product{
+    background-color: #cab8fc;
+}
+
+#flavors #oreohome .product:hover{
+    background-color: #bca5fb;
+}

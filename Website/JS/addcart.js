@@ -6,26 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const closeBtn = document.querySelector('.close');
     const addToCartButtons = document.querySelectorAll('.add-to-cart-btn');
     const listCartHTML = document.querySelector('.cart-tab .listCart');
-
-    let cartQuantity = 0;
-
     const checkoutBtn = document.querySelector('.checkout');
 
-    checkoutBtn.addEventListener('click', function () {
-        // Calculate the total price
-        const totalPrice = calculateTotalPrice();
 
-        // Get the address (you may replace this with your own logic to get the address)
-        const address = prompt('Please enter your address:');
-
-        // Display a modal or alert with the total price, address, and payment method
-        const paymentMethod = 'Cash on Delivery'; // You can change this if you have other payment methods
-        alert(`Total Price: $${totalPrice.toFixed(2)}\nAddress: ${address}\nPayment Method: ${paymentMethod}`);
-        alert(`Your Order will reach you in 3 days`)
-        alert(`Thank U For Shopping From COREO.`);
-    });
-
-
+    let cartQuantity = 0;
 
     cartIcon.addEventListener('click', function () {
         body.classList.toggle('showcart');
@@ -54,58 +38,56 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    checkoutBtn.addEventListener('click', function () {
+        if (cartQuantity === 0) {
+            alert('Please add items to the cart before checking out.');
+            return;
+        }
+    
+        // Prompt the user for address input
+        const address = prompt('Please enter your address:');
+    
+        // Display alert boxes with the provided address and payment method
+        alert(`Total Price: $${calculateTotalPrice().toFixed(2)}\nAddress: ${address}\nPayment Method: Cash on Delivery`);
+        alert('Your Order will reach you in 3 days');
+        alert('Thank U For Shopping From COREO.');
+    
+        // Remove items from the cart
+        clearCart();
+    
+        // Update the cart count in the icon
+        cartQuantity = 0;
+        cartCount.innerText = cartQuantity;
+    });
+    
+
     listCartHTML.addEventListener('click', function (event) {
         const positionClick = event.target;
-    
+
         if (positionClick.classList.contains('minus') || positionClick.classList.contains('plus')) {
             const quantityElement = positionClick.parentElement.querySelector('span');
             let quantity = parseInt(quantityElement.innerText);
-    
+
             if (positionClick.classList.contains('plus')) {
                 quantity++;
             } else {
-                quantity = Math.max(quantity - 1, 0); // Ensure quantity doesn't go below 0
+                quantity = Math.max(quantity - 1, 0);
             }
-    
+
             quantityElement.innerText = quantity;
-    
-            if (quantity === 0) {
+
+            if (quantity === 0 && positionClick.classList.contains('minus')) {
                 // Remove the item from the cart
                 const item = positionClick.closest('.item');
                 item.remove();
                 // Decrement the cart quantity
                 cartQuantity--;
             }
-    
+
             // Update the total quantity in the cart
             updateCartTotal();
         }
     });
-    
-
-    function calculateTotalPrice() {
-        // Calculate the total price by summing up individual prices considering their quantities
-        const total = Array.from(listCartHTML.children).reduce((totalPrice, item) => {
-            const quantityElement = item.querySelector('.quantity span');
-            const quantity = parseInt(quantityElement.innerText);
-
-            if (!isNaN(quantity)) {
-                const priceElement = item.querySelector('.totalprice');
-                const price = parseFloat(priceElement.innerText.replace('$', ''));
-
-                if (!isNaN(price)) {
-                    return totalPrice + quantity * price;
-                }
-            }
-
-            return totalPrice;
-        }, 0);
-
-        return total;
-    }
-
-
-
 
     function addItemToCart(name, price) {
         // Check if the item already exists in the cart
@@ -158,7 +140,32 @@ document.addEventListener('DOMContentLoaded', function () {
         }, 0);
 
         // Update the cart count in the icon
-        cartCount.innerText = totalQuantity;
+        cartQuantity = totalQuantity;
+        cartCount.innerText = cartQuantity;
     }
-});
 
+    function calculateTotalPrice() {
+        // Calculate the total price by summing up individual item prices
+        const totalPrice = Array.from(listCartHTML.children).reduce((total, item) => {
+            const quantityElement = item.querySelector('.quantity span');
+            const quantity = parseInt(quantityElement.innerText);
+            const priceElement = item.querySelector('.totalprice');
+            const price = parseFloat(priceElement.innerText.replace('$', ''));
+
+            // Check if quantity and price are valid numbers
+            if (!isNaN(quantity) && !isNaN(price)) {
+                return total + quantity * price;
+            }
+
+            return total;
+        }, 0);
+
+        return totalPrice;
+    }
+
+    function clearCart() {
+        // Remove all items from the cart
+        Array.from(listCartHTML.children).forEach(item => item.remove());
+    }
+    
+});
