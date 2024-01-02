@@ -23,17 +23,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     addToCartButtons.forEach(function (button) {
         button.addEventListener('click', function () {
-            // Increment the cart quantity
+
             cartQuantity++;
-            // Update the cart count in the icon
+          
             cartCount.innerText = cartQuantity;
 
-            // Get product details
             const product = button.parentElement;
             const productName = product.querySelector('h3').innerText;
-            const productPrice = parseFloat(product.querySelector('span').innerText.replace('$', '')); // Convert to a floating-point number
+            const productPrice = parseFloat(product.querySelector('span').innerText.replace('$', '')); 
 
-            // Add or update item in the cart
+       
             addItemToCart(productName, productPrice);
         });
     });
@@ -44,18 +43,16 @@ document.addEventListener('DOMContentLoaded', function () {
             return;
         }
     
-        // Prompt the user for address input
         const address = prompt('Please enter your address:');
     
-        // Display alert boxes with the provided address and payment method
         alert(`Total Price: $${calculateTotalPrice().toFixed(2)}\nAddress: ${address}\nPayment Method: Cash on Delivery`);
         alert('Your Order will reach you in 3 days');
         alert('Thank U For Shopping From COREO.');
     
-        // Remove items from the cart
+   
         clearCart();
     
-        // Update the cart count in the icon
+       
         cartQuantity = 0;
         cartCount.innerText = cartQuantity;
     });
@@ -77,33 +74,33 @@ document.addEventListener('DOMContentLoaded', function () {
             quantityElement.innerText = quantity;
 
             if (quantity === 0 && positionClick.classList.contains('minus')) {
-                // Remove the item from the cart
+
                 const item = positionClick.closest('.item');
                 item.remove();
-                // Decrement the cart quantity
+       
                 cartQuantity--;
             }
 
-            // Update the total quantity in the cart
+          
             updateCartTotal();
         }
     });
 
     function addItemToCart(name, price) {
-        // Check if the item already exists in the cart
+       
         const existingItem = Array.from(listCartHTML.children).find(item => item.querySelector('.name').innerText === name);
 
         if (existingItem) {
-            // Item already exists, update the quantity
+   
             const quantityElement = existingItem.querySelector('.quantity span');
             let quantity = parseInt(quantityElement.innerText);
 
-            // Check if quantity is a valid number
+     
             if (!isNaN(quantity)) {
                 quantityElement.innerText = quantity + 1;
             }
         } else {
-            // Item does not exist, create a new item in the cart
+
             let newItem = document.createElement('div');
             newItem.classList.add('item');
             newItem.innerHTML = `
@@ -116,30 +113,29 @@ document.addEventListener('DOMContentLoaded', function () {
                 </div>
             `;
 
-            // Apply CSS styles
-            newItem.style.border = '1px solid #ccc'; // Example style, you can customize this
-            newItem.style.padding = '10px'; // Example style, you can customize this
+         
+            newItem.style.border = '1px solid #ccc'; 
+            newItem.style.padding = '10px';
 
             listCartHTML.appendChild(newItem);
         }
 
-        // Update the total quantity in the cart
+       
         updateCartTotal();
     }
 
     function updateCartTotal() {
-        // Calculate the total quantity by summing up individual quantities
+      
         const totalQuantity = Array.from(listCartHTML.children).reduce((total, item) => {
             const quantityElement = item.querySelector('.quantity span');
             const quantity = parseInt(quantityElement.innerText);
-            // Check if quantity is a valid number
+            
             if (!isNaN(quantity)) {
                 return total + quantity;
             }
             return total;
         }, 0);
 
-        // Update the cart count in the icon
         cartQuantity = totalQuantity;
         cartCount.innerText = cartQuantity;
     }
@@ -164,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function clearCart() {
-        // Remove all items from the cart
+       
         Array.from(listCartHTML.children).forEach(item => item.remove());
     }
     
