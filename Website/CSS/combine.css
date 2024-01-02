@@ -23,6 +23,10 @@ header{
     width: 100%;
     padding: 30px;
     margin-bottom: 80px;
+    margin-top: 0px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 .header{
     max-width: 1500px;
@@ -86,11 +90,11 @@ section{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Add your styles here */
 
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
+    margin-top: 200px;
     padding: 0;
 }
 
@@ -579,6 +583,7 @@ footer {
 
 .cart-tab{
     width: 450px;
+    z-index: 1050;
     background-color: #353432;
     color: #eee;
     position: fixed;
